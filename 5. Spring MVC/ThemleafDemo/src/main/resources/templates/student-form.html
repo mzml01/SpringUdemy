@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Registration form</title>
+    <style>
+        .funny {
+            color: red;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!--    <script>-->
+<!--        $(document).ready(function(){-->
+<!--            var allRadios = $('input[type=radio]')-->
+<!--            var radioChecked;-->
+
+<!--            var setCurrent = function(e) {-->
+<!--                var obj = e.target;-->
+<!--                radioChecked = $(obj).prop('checked');-->
+<!--            }-->
+
+<!--            var setCheck = function(e) {-->
+<!--                if (e.type == 'keypress' && e.charCode != 32) {-->
+<!--                    return false;-->
+<!--                }-->
+<!--                var obj = e.target;-->
+<!--                if (radioChecked) {-->
+<!--                    $(obj).prop('checked', false);-->
+<!--                }-->
+<!--            }-->
+
+<!--            $.each(allRadios, function(i, val){-->
+<!--                var radio = $(this);-->
+<!--                radio.on('mousedown keydown', setCurrent);-->
+<!--                radio.on('click keypress', setCheck);-->
+<!--            });-->
+<!--        });-->
+<!--    </script>-->
+</head>
+
+<body>
+<h3>Student Registration Form</h3>
+<form th:action="@{/processForm}" th:object="${student}" method="POST">
+    First Name: <input type="text" th:field="*{firstName}" />
+    <br><br>
+    Last Name: <input type="text" th:field="*{lastName}" />
+    <span th:if="${#fields.hasErrors('lastName')}" th:errors="*{lastName}" class="funny">Invalid Last Name</span>
+    <br><br>
+    CourseCode : <input type="text" th:field="*{courseCode}"/>
+    <span th:if="${#fields.hasErrors('courseCode')}" th:errors="*{courseCode}" class="funny"/>
+    <br><br>
+    Country:
+    <select th:field="*{country}">
+    <option th:each="tempCountry : ${countries}"
+            th:value="${tempCountry}"
+            th:text="${tempCountry}"></option>
+    </select>
+    <br><br>
+    Postal Code: <input type="text" th:field="*{postalCode}" />
+    <span th:if="${#fields.hasErrors('postalCode')}" th:errors="*{postalCode}" class="funny">Invalid Postal Code</span>
+    <br><br>
+    Favorite Language: <input type="checkbox" th:field="*{favoriteLanguage}"
+                              th:each="tempLanguage : ${csLanguages}"
+                              th:value="${tempLanguage}"
+                              th:text="${tempLanguage}"/>
+    <br><br>
+    Free Pass : <input type="number" th:field="*{freePass}" />
+    <span th:if="${#fields.hasErrors('freePass')}" th:errors="*{freePass}" class="funny">Invalid Free Pass</span>
+    <br><br>
+    <input type="submit" value="submit"/>
+</form>
+
+</body>
+</html>
