@@ -4,29 +4,47 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="52dca821-5e59-4bb1-a27f-280f26089953" name="Changes" comment="" />
+    <list default="true" id="52dca821-5e59-4bb1-a27f-280f26089953" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Rest MVC/RestMVC/src/main/java/com/mzml/restmvc/Controller/EmployeeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Rest MVC/RestMVC/src/main/java/com/mzml/restmvc/DAO/EmployeeDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Rest MVC/RestMVC/src/main/java/com/mzml/restmvc/Entity/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Rest MVC/RestMVC/src/main/java/com/mzml/restmvc/Service/EmployeeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Rest MVC/RestMVC/src/main/java/com/mzml/restmvc/Service/EmployeeServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Rest MVC/RestMVC/src/main/resources/templates/employee-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rest MVC/RestMVC/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Rest MVC/RestMVC/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Rest MVC/RestMVC/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Rest MVC/RestMVC/src/main/resources/application.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="2iC2Imiqebrn8NrIPH577d5MtmD" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Spring/Udemy/3. REST Crud API",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Spring/Udemy/3. REST Crud API&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Spring Boot.EmployeeDemoJpaApplication">
     <configuration name="EmployeeDemoJpaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
@@ -61,6 +79,9 @@
       <option name="presentableId" value="Default" />
       <updated>1718980160553</updated>
       <workItem from="1718980161639" duration="109000" />
+      <workItem from="1719416235286" duration="15000" />
+      <workItem from="1719416283811" duration="767000" />
+      <workItem from="1719417939529" duration="18000" />
     </task>
     <servers />
   </component>
