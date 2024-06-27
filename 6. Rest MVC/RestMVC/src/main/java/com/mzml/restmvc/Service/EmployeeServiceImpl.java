@@ -29,7 +29,7 @@ public class EmployeeServiceImpl implements EmployeeService{
 
     @Override
     public Employee save(Employee employee) {
-        return null;
+        return employeeDAO.save(employee);
     }
 
     @Override
